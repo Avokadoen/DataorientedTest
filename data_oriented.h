@@ -1,8 +1,9 @@
 #pragma once
-#include "enums.h"
+#include "globals.h"
 #include <iostream>
 #include <vector>
 
+// base data type
 struct Animal
 {
 public:
@@ -56,6 +57,7 @@ struct AnimalDataController
 	std::vector<Dog> dogData;
 	int dogCount = 0;
 
+	AnimalDataController();
 	void createNewAnimal(std::string name, Gender gender, int age);
 	void createNewDomesticated(int animalIndex, std::string owner);
 	void createNewCat(std::string name, Gender gender, int age, std::string owner);

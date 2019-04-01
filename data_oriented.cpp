@@ -29,6 +29,13 @@ Dog::Dog(int selfIndex, int domesticIndex) {
 
 
 // |-------------------------------------------------------------------|
+AnimalDataController::AnimalDataController() {
+	animalData.reserve(CAT_COUNT + DOG_COUNT);
+	domesticatedData.reserve(CAT_COUNT + DOG_COUNT);
+	catData.reserve(CAT_COUNT);
+	dogData.reserve(DOG_COUNT);
+}
+
 void AnimalDataController::createNewAnimal(std::string name, Gender gender, int age) {
 	animalData.push_back(Animal(name, gender, age, animalCount++));
 }

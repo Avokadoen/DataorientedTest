@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "enums.h"
+#include "globals.h"
 
 class AnimalClass
 {
