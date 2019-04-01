@@ -1,6 +1,12 @@
 #pragma once
 #include <iostream>
 #include "globals.h"
+/*
+	NOTE:
+	The compelxity differnce in the two paradigms can be due to my inexperience 
+	with data oriented
+*/
+
 
 class AnimalClass
 {

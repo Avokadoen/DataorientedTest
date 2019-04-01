@@ -10,6 +10,9 @@ public:
 	std::string name;
 	Gender gender;
 	int age;
+
+	// in data oriented other object cannot inherent, but they can however
+	// point to some other data through indexing
 	int selfIndex;
 
 	Animal(std::string name, Gender gender, int age, int selfIndex);
@@ -17,10 +20,10 @@ public:
 
 struct Domesticated
 {
+	std::string owner;
+
 	int selfIndex;
 	int animalIndex;
-
-	std::string owner;
 
 	Domesticated(std::string owner, int selfIndex, int animalIndex);
 };
@@ -41,8 +44,7 @@ struct Dog
 	Dog(int selfIndex, int domesticIndex);
 };
 
-
-
+// we use mediator pattern to make it easier to create and reference objects 
 struct AnimalDataController
 {
 	std::vector<Animal>	animalData;
